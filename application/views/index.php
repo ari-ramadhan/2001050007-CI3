@@ -46,6 +46,53 @@
             <span class="fs-4">ARI RAMADHAN / 2001050007</span>
         </div>
 
+        <div class="card mt-4">
+            <span class="card-header">Data Mahasiswa</span>
+            <div class="card-body">
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <th>Nomor</th>
+                        <th>Nama</th>
+                        <th>Nim</th>
+                        <th>Alamat</th>
+                        <th>Aksi</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Ari Ramadhan</td>
+                        <td>2001050007</td>
+                        <td>Seganteng Kr. Monjok</td>
+                        <td>
+                            <button type="button" class="btn btn-warning">UBAH</button>
+                            <button type="button" class="btn btn-danger">HAPUS</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Ferdi Sambo</td>
+                        <td>2001050001</td>
+                        <td>Lapas Suka Suka</td>
+                        <td>
+                            <button type="button" class="btn btn-warning">UBAH</button>
+                            <button type="button" class="btn btn-danger">HAPUS</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Kekeyi ™</td>
+                        <td>2001050001</td>
+                        <td>Nganjuk</td>
+                        <td>
+                            <button type="button" class="btn btn-warning">UBAH</button>
+                            <button type="button" class="btn btn-danger">HAPUS</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
 </body>
 
