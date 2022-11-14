@@ -13,9 +13,13 @@ class KelasController extends CI_Controller {
 	public function index()
 	{	
 		$data['isi'] = $this->KelasModel->getAll();
-		
 		$this->load->helper('url');
 		$this->load->view('index', $data);
+	}
+
+	public function tambah() {
+		$this->load->helper('url');
+		$this->load->view('tambah');
 	}
 }
 

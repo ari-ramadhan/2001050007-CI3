@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Document</title>
+    <title>Fakultas</title>
 
     <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
 </head>
@@ -27,7 +27,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tambah Data</a>
+                            <a class="nav-link" href="<?php echo site_url('kelascontroller/tambah') ?>">Tambah Data</a>
                         </li>
                     </ul>
 
@@ -45,36 +45,36 @@
         <div class="alert alert-info mt-4 text-center" role="alert">
             <span class="fs-4">ARI RAMADHAN / 2001050007</span>
         </div>
-
         <div class="card mt-4">
-            <span class="card-header">Data Fakultas</span>
+            <span class="card-header">Tambah Data Fakultas</span>
             <div class="card-body">
-                <table class="table table-bordered text-center">
-                    <tr>
-                        <th>Nomor</th>
-                        <th>Fakultas</th>
-                        <th>Prodi</th>
-                        <th>Kelas</th>
-                        <th>Isi</th>
-                        <th>Aksi</th>
-                    </tr>
+                    
+                    <table class="table table-bordered text-center">
+                        <tr>
+                            <th>Nomor</th>
+                            <th>Fakultas</th>
+                            <th>Prodi</th>
+                            <th>Kelas</th>
+                            <th>Isi</th>
+                            <th>Aksi</th>
+                        </tr>
 
-                    <?php $i = 1;
+                        <?php $i = 1;
                             foreach ($isi as $item) :?>
-                    <tr>
-                        <td><?php echo $i; ?></td>
-                        <td><?php echo $item->fakultas ?></td>
-                        <td><?php echo $item->prodi ?></td>
-                        <td><?php echo $item->kelas ?></td>
-                        <td><?php echo $item->isi ?></td>
-                        <td>
-                            <button type="button" class="btn btn-warning">UBAH</button>
-                            <button type="button" class="btn btn-danger">HAPUS</button>
-                        </td>
-                    </tr>
-                    <?php $i++;
+                        <tr>
+                            <td><?php echo $i; ?></td>
+                            <td><?php echo $item->fakultas ?></td>
+                            <td><?php echo $item->prodi ?></td>
+                            <td><?php echo $item->kelas ?></td>
+                            <td><?php echo $item->isi ?></td>
+                            <td>
+                                <button type="button" class="btn btn-warning">UBAH</button>
+                                <button type="button" class="btn btn-danger">HAPUS</button>
+                            </td>
+                        </tr>
+                        <?php $i++;
                             endforeach; ?>
-                </table>
+                    </table>
             </div>
         </div>
     </div>
